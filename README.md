@@ -7,10 +7,15 @@ Proof of Concept for JVM-based language interop in Clojure.
 - Clojure
 - Java
 - Kotlin
+- Scala
 
-## Compile Kotlin
+## Compile
 
+    # Kotlin
     kotlinc src -d kt.jar
+
+    # Scala
+    scalac src/bwawan/scala/* -d scala.jar
 
 ## Test
 
