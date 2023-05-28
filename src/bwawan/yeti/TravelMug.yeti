@@ -1,0 +1,5 @@
+module bwawan.yeti.TravelMug;
+{
+    drink thing = "You sip \(thing) from your hefty YETI.",
+    pour thing = "You pour \(thing) into your lovely YETI."
+}

@@ -1,0 +1,15 @@
+# Kotlin
+kotlinc src -d build/kt.jar
+
+# Scala
+scalac src/bwawan/scala/* -d build/scala.jar
+
+# Golo
+rm -rf bwawan/golo
+golo compile src/bwawan/golo
+jar cf build/golo.jar bwawan/golo
+
+# Yeti
+rm -rf bwawan/yeti
+java -jar bin/yeti.jar -d . src/bwawan/yeti
+jar cf build/yeti.jar bwawan/yeti

@@ -1,14 +1,6 @@
 /.idea
+/build
 /bwawan
 /target
-/lib
-/classes
-/checkouts
-pom.xml
-*.jar
-*.class
 *.iml
-.lein-deps-sum
-.lein-failures
-.lein-plugins
 .lein-repl-history

@@ -6,9 +6,11 @@
   :main clj-polyglot.core
   :dependencies [[org.clojure/clojure "1.11.1"]]
   :resource-paths [
-                   "golo.jar" ; Required for Golo
-                   "kt.jar" ; Required for Kotlin
-                   "scala.jar" ; Required for Scala
+                   "build/golo.jar" ; Required for Golo
+                   "build/kt.jar" ; Required for Kotlin
+                   "build/scala.jar" ; Required for Scala
+                   "build/yeti.jar" ; Required for Yeti
+                   "bin/yeti.jar" ; Required for Yeti (core libraries)
                    ]
   :java-source-paths ["src"] ; Required for Java
   :profiles {:dev {:dependencies [[speclj "3.4.3"]]}}

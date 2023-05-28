@@ -9,6 +9,7 @@ Proof of Concept for JVM-based language interop in Clojure.
 - Java
 - Kotlin
 - Scala
+- Yeti
 
 ## Pending Languages...
 
@@ -21,14 +22,13 @@ Proof of Concept for JVM-based language interop in Clojure.
   - How can I create a .jar from .fan
 - Frege
 - Go/JGo
-- Golo
-  - Pending Objects/Structs
 - Groovy
 - Jython
 - JRuby
 - Xtend
-- Yeti
 - Haskell?
+- Lua?
+  - LuaJava
 - C/C++ ???
   - JNI
 - .NET !?!?!?
@@ -36,15 +36,7 @@ Proof of Concept for JVM-based language interop in Clojure.
 
 ## Compile
 
-    # Kotlin
-    kotlinc src -d kt.jar
-
-    # Scala
-    scalac src/bwawan/scala/* -d scala.jar
-
-    # Golo
-    golo compile src/bwawan/golo
-    jar cf golo.jar bwawan/golo
+    bin/compile
 
 ## Test
 

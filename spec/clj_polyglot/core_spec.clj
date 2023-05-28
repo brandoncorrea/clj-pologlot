@@ -1,10 +1,11 @@
 (ns clj-polyglot.core-spec
   (:require [clj-polyglot.core :refer :all]
             [speclj.core :refer :all])
-  (:import (bwawan.java Coffee Tea)
+  (:import (bwawan.golo Competitor Race)
+           (bwawan.java Coffee Tea)
            (bwawan.kt Goodbye Hello)
            (bwawan.scala Dragon Dragon$ Lizard Lizard$) ; Static classes require the $ suffix
-           (bwawan.golo Competitor Race)))
+           (bwawan.yeti abominable travelmug)))
 
 (describe "a test"
 
@@ -48,6 +49,14 @@
     (it "Static Race"
       (should= "Everybody starts running!" (Race/fire)))
     (it "Static Competitor"
-      (should= "Mr. Competitor starts running as fast as he can!" (Competitor/sprint)))
+      (should= "Mr. Competitor starts running as fast as he can!" (Competitor/sprint))))
+
+  (context "Yeti"
+    (it "Abominable Snowman"
+      (should= "I am the Abominable Snowman!!" (.apply (abominable/snowman) "Snowman")))
+    (it "Pouring Coffee"
+      (should= "You pour Coffee into your lovely YETI." (.apply (travelmug/pour) "Coffee")))
+    (it "Drinking Coffee"
+      (should= "You sip Coffee from your hefty YETI." (.apply (travelmug/drink) "Coffee")))
     )
   )

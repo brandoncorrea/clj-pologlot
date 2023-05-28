@@ -1,0 +1,4 @@
+module bwawan.yeti.Abominable;
+{
+    snowman name = "I am the Abominable \(name)!!"
+}

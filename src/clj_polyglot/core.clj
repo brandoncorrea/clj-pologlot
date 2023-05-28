@@ -1,8 +1,9 @@
 (ns clj-polyglot.core
-  (:import (bwawan.java Coffee Tea)
+  (:import (bwawan.golo Race Competitor)
+           (bwawan.java Coffee Tea)
            (bwawan.kt Goodbye Hello)
            (bwawan.scala Dragon Dragon$ Lizard Lizard$)
-           (bwawan.golo Race Competitor)))
+           (bwawan.yeti abominable travelmug)))
 
 (defn kotlin-example []
   (println "----- Kotlin Examples -----")
@@ -36,8 +37,18 @@
   (println "Competitor Static:" (Competitor/sprint))
   (println "Race Static:" (Race/fire)))
 
+(defn yeti-example []
+  (println "----- Yeti Examples -----")
+  (println "Abominable Snowman:" (.apply (abominable/snowman) "Snowman"))
+  (println "Pour Coffee:" (.apply (travelmug/pour) "Coffee"))
+  (println "Drink Coffee:" (.apply (travelmug/drink) "Coffee")))
+
 (defn -main
   [& _]
-  (doseq [example [kotlin-example java-example scala-example golo-example]]
+  (doseq [example [kotlin-example
+                   java-example
+                   scala-example
+                   golo-example
+                   yeti-example]]
     (example)
     (println)))
