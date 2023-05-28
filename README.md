@@ -14,11 +14,13 @@ Proof of Concept for JVM-based language interop in Clojure.
 
 - Ballerina/jBallerina
 - Ceylon
-- Concurnaas
+- Concurnas
 - Fantom
   - How can I create a .jar from .fan
 - Frege
 - Go/JGo
+- Golo
+  - Pending Objects/Structs
 - Groovy
 - Jython
 - JRuby
