@@ -6,6 +6,7 @@
   :main clj-polyglot.core
   :dependencies [[org.clojure/clojure "1.11.1"]]
   :resource-paths [
+                   "golo.jar" ; Required for Golo
                    "kt.jar" ; Required for Kotlin
                    "scala.jar" ; Required for Scala
                    ]

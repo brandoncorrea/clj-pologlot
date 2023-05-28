@@ -4,7 +4,7 @@
   (:import (bwawan.java Coffee Tea)
            (bwawan.kt Goodbye Hello)
            (bwawan.scala Dragon Dragon$ Lizard Lizard$) ; Static classes require the $ suffix
-           ))
+           (bwawan.golo Competitor Race)))
 
 (describe "a test"
 
@@ -43,4 +43,11 @@
       (should= "The lizard object jumps over the moon" (.leap (Lizard.))))
     (it "Static lizards leap"
       (should= "The static lizard jumps over the moon" (.leap Lizard$/MODULE$))))
+
+  (context "Golo"
+    (it "Static Race"
+      (should= "Everybody starts running!" (Race/fire)))
+    (it "Static Competitor"
+      (should= "Mr. Competitor starts running as fast as he can!" (Competitor/sprint)))
+    )
   )

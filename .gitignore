@@ -1,4 +1,5 @@
-.idea
+/.idea
+/bwawan
 /target
 /lib
 /classes
