@@ -14,6 +14,8 @@ Proof of Concept for JVM-based language interop in Clojure.
 
 - Ballerina/jBallerina
 - Ceylon
+- COBOL
+  - GnuCOBOL?
 - Concurnas
 - Fantom
   - How can I create a .jar from .fan
